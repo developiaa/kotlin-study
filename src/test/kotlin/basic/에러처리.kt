@@ -1,3 +1,5 @@
+package basic
+
 import org.junit.jupiter.api.Test
 
 class 에러처리 {

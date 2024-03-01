@@ -1,3 +1,5 @@
+package basic
+
 import kotlin.test.Test
 
 class 함수 {
