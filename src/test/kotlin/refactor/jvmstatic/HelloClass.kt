@@ -4,6 +4,7 @@ class HelloClass {
     companion object{
         @JvmStatic // 이렇게 하면 자바에서 Companion이나 INSTANCE 키워드 없이 호출 가능
         fun hello() = "Hello"
+        const val num = "1"
     }
 }
 
@@ -18,5 +19,7 @@ fun main() {
     println(hello)
     val hi = HiObject.hi()
     println(hi)
+
+    print(HelloClass.num)
 
 }
