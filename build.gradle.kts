@@ -1,5 +1,9 @@
 plugins {
     kotlin("jvm") version "1.9.22"
+    /**
+     *  kotlin은 기본적으로 final class이기 때문에 allOpen같은 방식을 해주어야 하는데 제공해주는 플러그인을 사용할 경우
+     *  알아서 open 클래스로 변경해줌
+     */
     kotlin("plugin.spring") version "1.9.21"
     kotlin("plugin.jpa") version "1.9.21"
 //    kotlin("plugin.noarg") version "1.9.21"
