@@ -1,8 +1,8 @@
 package pro.developia.leetcode
 
 fun main() {
-    var nums = intArrayOf(2, 7, 11, 15)
-    var target = 17
+    val nums = intArrayOf(2, 7, 11, 15)
+    val target = 17
     print(twoSum(nums, target).contentToString())
 }
 
@@ -19,7 +19,8 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
             break
         }
 
-        numMap.put(nums[i], i)
+//        numMap.put(nums[i], i)
+        numMap[nums[i]] = i
     }
     return intArrayOf(numMap.get(complement)!!, answer)
 }
